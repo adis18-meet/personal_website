@@ -1,6 +1,6 @@
 .jumbotron {
     margin-bottom: 0px;
-    background-image: url(https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2017/07/04/11/post-workout-mistake-stretching.jpg);
+    background-image: url('https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2017/07/04/11/post-workout-mistake-stretching.jpg');
     background-position: 0% 25%;
     background-size: cover;
     background-repeat: no-repeat;
