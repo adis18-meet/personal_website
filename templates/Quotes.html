@@ -26,15 +26,25 @@
 	    <div class="navbar-header">
 	    </div>
 	    <ul class="nav navbar-nav">
-	    	<li><a href="home">HOME</a></li>
+	 		<li><a href="home">HOME</a></li>
 	    	<li><a href="workouts">WORKOUTS</a></li>
 	    	<li><a href="about">ABOUT</a></li>
-	    	<li><a href="Quotes">QUOTES</a></li>
+	    	<li class="active"><a href="Quotes">QUOTES</a></li>
 	    </ul>
 	</nav>
 	<div class="page-header">
 		<h1 style="font-family: Amethyst; text-align: center;"> QUOTES </h1>
 	</div>
-	<img src="{{url_for('static', filename='quote1.jpg')}}" width="480" height="360" align="left">
+	<div class="row">
+	<div class="col-md-4">
+	<img src="{{url_for('static', filename='quote1.jpg')}}" class="img-thumbnail" alt="Cinque Terre" style="width:360px; height:360px;" >
+	</div>
+	<div class="col-md-4">
+	<img src="{{url_for('static', filename='quote2.jpg')}}" class="img-thumbnail" alt="Cinque Terre" style="width:360px; height:360px;">
+	</div>
+	<div class="col-md-4">
+	<img src="{{url_for('static', filename='quote3.jpg')}}" class="img-thumbnail" alt="Cinque Terre" style="width:360px; height:360px;" >
+	</div>
+	</div>
 </body>
 </html>
