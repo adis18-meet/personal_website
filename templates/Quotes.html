@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Motivational Quotes</title>
-<link rel = "stylesheet"href = "home.css"/>
-<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<scriptsrc="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<scriptsrc="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel = "stylesheet" href = "home.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 	@font-face {
@@ -26,15 +26,15 @@
 	    <div class="navbar-header">
 	    </div>
 	    <ul class="nav navbar-nav">
-	    	<li><a href="home.html">HOME</a></li>
-	    	<li><a href="workouts.html">WORKOUTS</a></li>
-	    	<li><a href="about.html">ABOUT</a></li>
-	    	<li><a href="Quotes.html">QUOTES</a></li>
+	    	<li><a href="home">HOME</a></li>
+	    	<li><a href="workouts">WORKOUTS</a></li>
+	    	<li><a href="about">ABOUT</a></li>
+	    	<li><a href="Quotes">QUOTES</a></li>
 	    </ul>
 	</nav>
 	<div class="page-header">
 		<h1 style="font-family: Amethyst; text-align: center;"> QUOTES </h1>
 	</div>
-	<img src="quote1.jpg" width="480" height="360" align="left">
+	<img src="{{url_for('static', filename='quote1.jpg')}}" width="480" height="360" align="left">
 </body>
 </html>
