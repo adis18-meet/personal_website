@@ -10,13 +10,12 @@
 <style>
 	@font-face {
     font-family: Amethyst;
-    src: url(Amethyst.ttf);
-}
+    src:{{url_for('static', filename='fonts/Amethyst.ttf')}};
+	}
 	@font-face {
 	font-family: KLGabe;
-	src: url(KLGabe.ttf);
+	src: {{url_for('static', filename='fonts/KLGabe.ttf')}};
 	}
-
 </style>
 </head>
 <body>
@@ -27,9 +26,10 @@
 	    </div>
 	    <ul class="nav navbar-nav">
 	    	<li class="active"><a href="home">HOME</a></li>
-	    	<li><a href="workouts">WORKOUTS</a></li>
-	    	<li><a href="about">ABOUT</a></li>
+	    	<li><a href="workouts">WORKOUT VIDEOS</a></li>
+	    	<li><a href="Workoutplans">WORKOUT ROUTINES</a></li>
 	    	<li><a href="Quotes">QUOTES</a></li>
+	    	<li><a href="about">ABOUT</a></li>
 	    </ul>
 	</nav>
 <div class="page-header">
@@ -37,14 +37,18 @@
 </div>
 <div class="container">
 <div class="row">
-<div class="col-md-6">
-<a href="workouts"><h1 style="font-size: 20px; position:relative; margin-left: 115px; font-family: KLGabe;"> GET STARTED! </a></h1>
-<img src="https://www.fitnessmagazine.com/sites/fitnessmagazine.com/files/1200-mike-d-long-workout.jpg" class="img-thumbnail" alt="Cinque Terre" style="width:400px; height:280px;"> 
+<div class="col-md-4">
+<a href="workouts"><h1 style="font-size: 20px; position:relative; margin-left: 100px; font-family: KLGabe;"> WORKOUT VIDEOS </a></h1>
+<img src="http://wallpapers-hd-wide.com/wp-content/uploads/2016/01/brunette-in-the-gym-workout-1920x1080.jpg" class="img-thumbnail" alt="Cinque Terre" style="width:400px; height:280px;"> 
 </div>
-<div class="col-md-6">
-<a href="Quotes"><h1 style="font-size: 20px; font-family: KLGabe; margin-left: 82px;"> MOTIVATIONAL QUOTES</a></h1>
-<img src="http://thepacenews.com/wp-content/uploads/2017/06/logo.jpg" class="img-thumbnail" alt="Cinque Terre" style= "width:400px; height:280px; margin-right: 100px;">
+<div class="col-md-4">
+<a href="Quotes"><h1 style="font-size: 20px; font-family: KLGabe; margin-left:75px;"> MOTIVATIONAL QUOTES</a></h1>
+<img src="https://wallup.net/wp-content/uploads/2016/03/29/15708-working_out-gyms-boxing-748x421.png" class="img-thumbnail" alt="Cinque Terre" style= "width:400px; height:280px; margin-right: 100px;">
 	</div>
+	<div class="col-md-4">
+<a href="Workoutplans"><h1 style="font-size: 20px; position:relative; margin-left:70px; font-family: KLGabe;"> WORKOUT ROUTINES </a></h1>
+<img src="http://cdn.phillymag.com/wp-content/uploads/2016/05/abs.jpg" class="img-thumbnail" alt="Cinque Terre" style="width:400px; height:280px;"> 
+</div>
 </div>
 </div>
 

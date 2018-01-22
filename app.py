@@ -23,3 +23,6 @@ def about():
 @app.route("/Quotes")
 def quotes():
 	return render_template("Quotes.html")
+@app.route("/Workoutplans")
+def workoutplans():
+	return render_template("Workoutplans.html")
