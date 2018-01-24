@@ -2,20 +2,40 @@
 <html>
 <head>
 	<title>work-in</title>
- <link rel = "stylesheet" href = "home.css"/>
+<link rel = "stylesheet" href="{{url_for('static', filename='style.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	@font-face {
-    font-family: Amethyst;
-    src:{{url_for('static', filename='fonts/Amethyst.ttf')}};
-	}
-	@font-face {
+.btn {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	display: inline-block;
+	padding: 10px 14px;
+	color: #FFF;
+	border: 1px solid #FFF;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 120%;
+	background-color: rgba(255,255,255, 0);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
+	cursor: pointer;
 	font-family: KLGabe;
-	src: {{url_for('static', filename='fonts/KLGabe.ttf')}};
-	}
+}
+.btn:hover {
+	background-color: rgba(255,255,255, 0.3);
+	color: #FFF;
+}
+
 </style>
 </head>
 <body>
@@ -38,16 +58,19 @@
 <div class="container">
 <div class="row">
 <div class="col-md-4">
-<a href="workouts"><h1 style="font-size: 20px; position:relative; margin-left: 100px; font-family: KLGabe;"> WORKOUT VIDEOS </a></h1>
-<img src="http://wallpapers-hd-wide.com/wp-content/uploads/2016/01/brunette-in-the-gym-workout-1920x1080.jpg" class="img-thumbnail" alt="Cinque Terre" style="width:400px; height:280px;"> 
+<a href="workouts">
+<img src="http://wallpapers-hd-wide.com/wp-content/uploads/2016/01/brunette-in-the-gym-workout-1920x1080.jpg" alt="Cinque Terre" style="width:400px; height:280px; width:100%;"> 
+  <button class="btn">WORKOUT VIDEOS</button>
 </div>
 <div class="col-md-4">
-<a href="Quotes"><h1 style="font-size: 20px; font-family: KLGabe; margin-left:75px;"> MOTIVATIONAL QUOTES</a></h1>
-<img src="https://wallup.net/wp-content/uploads/2016/03/29/15708-working_out-gyms-boxing-748x421.png" class="img-thumbnail" alt="Cinque Terre" style= "width:400px; height:280px; margin-right: 100px;">
-	</div>
+<a href="Quotes">
+<img src="https://wallup.net/wp-content/uploads/2016/03/29/15708-working_out-gyms-boxing-748x421.png" alt="Cinque Terre" style= "width:400px; height:280px; margin-right: 100px; width:100%; ">
+  <button class="btn">MOTIVATIONAL QUOTES</button>
+</div>
 	<div class="col-md-4">
-<a href="Workoutplans"><h1 style="font-size: 20px; position:relative; margin-left:70px; font-family: KLGabe;"> WORKOUT ROUTINES </a></h1>
-<img src="http://cdn.phillymag.com/wp-content/uploads/2016/05/abs.jpg" class="img-thumbnail" alt="Cinque Terre" style="width:400px; height:280px;"> 
+<a href="Workoutplans">
+<img src="http://cdn.phillymag.com/wp-content/uploads/2016/05/abs.jpg"  alt="Cinque Terre" style="width:400px; height:280px; width:100%;"> 
+  <button class="btn">WORKOUT ROUTINES</button>
 </div>
 </div>
 </div>

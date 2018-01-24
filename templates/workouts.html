@@ -2,21 +2,12 @@
 <html>
 <head>
 	<title>workouts</title>
-<link rel = "stylesheet" href = "home.css"/>
+<link rel = "stylesheet" href="{{url_for('static', filename='style.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-	@font-face {
-    font-family: Amethyst;
-    src:{{url_for('static', filename='fonts/Amethyst.ttf')}};
-	}
-	@font-face {
-	font-family: KLGabe;
-	src: {{url_for('static', filename='fonts/KLGabe.ttf')}};
-	}
-</style>
+
 </head>
 <body>
 <br><br><nav class="navbar navbar-inverse navbar-fixed-top">
@@ -35,12 +26,15 @@
 	<div class="page-header">
 		<h1 style="text-align: center; font-family: Amethyst;">workouts</h1>
 	</div>
+	<h1 style="text-align: left; font-family: KLGabe;" s>30 Day Challenge</h1>
 	<div class="row">
 	<div class="col-md-4">
   	<iframe width="400" height="320" src="{{urls[0]}}" align="left"> DAY 1</iframe>
+  	<iframe width="400" height="320" src="{{urls[3]}}" align="left"> DAY 4</iframe>
   	</div>
   	<div class="col-md-4">
   	<iframe width="400" height="320" src="{{urls[1]}}" align="middle"> DAY 2</iframe>
+  	<iframe width="400" height="320" src="{{urls[4]}}" align="middle"> DAY 5</iframe>
   	</div>
   	<div class="col-md-4">
   	<iframe width="400" height="320" src="{{urls[2]}}" align="right"> DAY 3</iframe>

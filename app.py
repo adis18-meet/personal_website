@@ -13,6 +13,8 @@ def workouts():
         'https://www.youtube.com/embed/YdB1HMCldJY',
         'https://www.youtube.com/embed/11WLF24-5iM',
         'https://www.youtube.com/embed/8MPb0O9xApA',
+        'https://www.youtube.com/embed/03JKamVnbfs',	
+        'https://www.youtube.com/embed/oCB6Cu8PEdI&t=140s',
     ]
 	return render_template("workouts.html", urls=urls)
 
