@@ -2,20 +2,48 @@
 <html>
 <head>
 	<title>workouts</title>
-<link rel = "stylesheet"href = "home.css"/>
+<link rel = "stylesheet" href="{{url_for('static', filename='style.css')}}">
+<link rel = "stylesheet" href="{{url_for('static', filename='Workoutplans.css')}}">
 <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <scriptsrc="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <scriptsrc="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-	@font-face {
+@font-face {
     font-family: Amethyst;
     src: url(Amethyst.ttf);
 }
-	@font-face {
+@font-face {
 	font-family: KLGabe;
 	src: url(KLGabe.ttf);
 	}
+.btn {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	display: inline-block;
+	padding: 10px 14px;
+	color: #FFF;
+	border: 1px solid #FFF;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 120%;
+	background-color: rgba(255,255,255, 0);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	transition: background-color 300ms ease;
+	cursor: pointer;
+	font-family: hamer;
+}
+.btn:hover {
+	background-color: rgba(255,255,255, 0.3);
+	color: #FFF;
+}
 </style>
 </head>
 <body>
@@ -31,5 +59,25 @@
 	    	<li><a href="about">ABOUT</a></li>
 	    </ul>
 	</nav>
+
+	<div class="page-header">
+	<h1 style="font-family: Amethyst; text-align: center;"> WORKOUT ROUTINES</h1>
+	<br>
+
+	<div class="container">
+	<div class="row">
+	<div class="col-md-4">
+	<div class= abs>
+	<a href="abs">
+	<img src="https://3.bp.blogspot.com/-oFwofSWO-XQ/ViiCsb0p_nI/AAAAAAAAEfs/vKzc9-8AXIk/s1600/Six%2BPack%2BAbs%2BHD%2BWallpaper.jpg" alt="Cinque Terre" style= "width:400px; height:280px; margin-right: 100px; width:100%; border-radius: 15px; ">
+  <button class="btn">ABS</button>
+  </div>
+  </div>
+  <div class="glutes">
+  <img src="{{url_for('static', filename='glutes.jpg')}}" alt="Cinque Terre" style= "width:50px;height:280px; margin-right: 100px; width:100%; border-radius: 15px; ">
+  <button class="btn">GLUTES</button>
+
+	</div>
+	</div>
 </body>
 </html>

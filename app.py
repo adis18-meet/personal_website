@@ -28,3 +28,13 @@ def quotes():
 @app.route("/Workoutplans")
 def workoutplans():
 	return render_template("Workoutplans.html")
+
+@app.route("/abs")
+def abs():
+	return render_template("abs.html")
+
+@app.route("/glutes")
+def glutes():
+	return render_template("glutes.html")
+
+
