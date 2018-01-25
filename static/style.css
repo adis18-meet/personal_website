@@ -8,7 +8,12 @@
 	}
 
 	@font-face {
-		font-family: hamer;
+	font-family: hamer;
 		src: url('fonts/HamerRegular.otf');
 
+}
+
+@font-face {
+	font-family:bodrum;
+	src: url('fonts/Budrom.ttf');
 }

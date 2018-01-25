@@ -37,4 +37,19 @@ def abs():
 def glutes():
 	return render_template("glutes.html")
 
+@app.route("/chest")
+def chest():
+	return render_template("chest.html")
+
+@app.route("/arms")
+def arms():
+	return render_template("arms.html")
+
+@app.route("/legs")
+def legs():
+	return render_template("legs.html")
+
+@app.route("/fullbody")
+def fullbody():
+	return render_template("fullbody.html")
 
