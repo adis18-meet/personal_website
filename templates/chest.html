@@ -3,7 +3,7 @@
 <head>
 	<title>chest</title>
 <link rel = "stylesheet" href="{{url_for('static', filename='style.css')}}">
-<link rel = "stylesheet" href="{{url_for('static', filename='home.css')}}">
+<link rel = "stylesheet" href="{{url_for('static', filename='workoutplan.css')}}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -35,7 +35,10 @@
 .btn:hover {
 	background-color: rgba(255,255,255, 0.3);
 	color: #FFF;
-}
+	@font-face {
+	font-family:bodrum;
+	src: url('fonts/Bodrum.ttf');
+
 </style>
 </head>
 <body>
@@ -44,6 +47,7 @@
 	    <div class="navbar-header">
 	    </div>
 	    <ul class="nav navbar-nav">
+	   		<li><a href="home">HOME</a></li>
 	    	<li><a href="abs">ABS</a></li>
 	    	<li><a href="glutes">GLUTES</a></li>
 	    	<li class="active"><a href="chest">CHEST</a></li>
@@ -52,6 +56,8 @@
 	    	<li><a href="fullbody">FULL BODY</a></li>
 	    </ul>
 	</nav>
-
+<div class="page-header">
+<h1 style="font-family:bodrum; text-align: center;"> CHEST</h1>
+</div>
 </body>
 </html>

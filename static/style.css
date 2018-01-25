@@ -15,5 +15,10 @@
 
 @font-face {
 	font-family:bodrum;
-	src: url('fonts/Budrom.ttf');
+	src: url('fonts/Bodrum.ttf');
+}
+
+h1{
+	font-family: bodrum;
+	font-size: 75px;
 }
