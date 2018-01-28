@@ -53,3 +53,6 @@ def legs():
 def fullbody():
 	return render_template("fullbody.html")
 
+@app.route("/login")
+def login():
+	return render_template("home.html")
