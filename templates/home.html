@@ -10,25 +10,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; /
+    position: fixed;/
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    padding-top: 80px;
 }
 
-/* Modal Content/Box */
+
 .modal-content {
     background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
+    margin: 5px auto;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
 }
 
 /* The Close Button */
@@ -42,14 +40,14 @@
     font-weight: bold;
 }
 
-/* Close button on hover */
+
 .close:hover,
 .close:focus {
     color: red;
     cursor: pointer;
 }
 
-/* Add Zoom Animation */
+
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
@@ -91,6 +89,86 @@
 	background-color: rgba(255,255,255, 0.3);
 	color: #FFF;
 }
+.jumbotron:hover {
+	opacity: 0.5;
+}
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    border: none:;
+}
+/*
+.radiocontainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.radiocontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+ On mouse-over, add a grey background color 
+.radiocontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+
+.radiocontainer input:checked ~ .checkmark {
+    background-color: black;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+.radiocontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radiocontainer .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+*/
+.rcontainer {
+	border-radius: 50%;
+	background-color: red;
+
+}
 </style>
 </head>
 <body>
@@ -120,50 +198,59 @@
 </div>
 <div class="col-md-4">
 <a href="Quotes">
-<img src="https://wallup.net/wp-content/uploads/2016/03/29/15708-working_out-gyms-boxing-748x421.png" alt="Cinque Terre" style= "width:400px; height:280px; margin-right: 100px; width:100%; ">
+<img src="https://wallup.net/wp-content/uploads/2016/03/29/15708-working_out-gyms-boxing-748x421.png" style= "width:400px; height:280px; margin-right: 100px; width:100%; ">
   <button class="btn">MOTIVATIONAL QUOTES</button>
 </div>
 	<div class="col-md-4">
 <a href="Workoutplans">
-<img src="http://cdn.phillymag.com/wp-content/uploads/2016/05/abs.jpg"  alt="Cinque Terre" style="width:400px; height:280px; width:100%;"> 
+<img src="http://cdn.phillymag.com/wp-content/uploads/2016/05/abs.jpg" style="width:400px; height:280px; width:100%;"> 
   <button class="btn">WORKOUT ROUTINES</button>
   </a>
 </div>
 </div>
 </div>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="{{url_for('static', filename='avatarfemale.jpg')}}" alt="Avatar" class="avatar" style="height: 50px; width: 50px; position:center;">
-      <img src="{{url_for('static', filename='avatarmale.jpg')}}" alt="Avatar" class="avatar" style="height: 50px; width: 50px; position:center;">
-    </div>
-
-    <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Username" name="uname" required>
-      <br>
-      <br>
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Password" name="psw" required>
-      <br>
-      <br>
-      <input type="checkbox" name="gender" value="male"> Male
-  	  <input type="checkbox" name="gender" value="female" checked> Female<br>
-        
-      <button type="submit">Login</button>   
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      
-    </div>
-  </form>
+<br>
+<br>
+<br>
+<div class="jumbotron" style="background-color: black;" onclick="document.getElementById('id01').style.display='block'">
+	<h1 style="text-align:center; font-size:50px; font-family: Amethyst; color: white;">S I G N  U P</h1>
 </div>
 
+	
+		<div id="id01" class="modal" background="avatarfemale.jpg" style="text-align: center">
+  
+  		<form class="modal-content animate" action="/action_page.php">
+   			 <div class="imgcontainer">
+      	     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+ 			 </div>
+    <h1 style="font-family: hamer; display: inline;float: none;"> START YOUR JOURNEY TODAY </h1>
+    				<div class="container" style="display: inline; float: none;">
+      					<label><b>Username</b></label>
+      					<input type="text" placeholder="Username" name="uname" required>
+     			 		<br>
+      					<br>
+      					<label><b>Password</b></label>
+      					<input type="password" placeholder="Password" name="psw" required>
+      					<br>
+      					<br>
+      						<div class="rcontainer"></div>
+      						<label class="radiocontainer">Female
+  							<input type="radio" checked="checked" name="radio">
+ 							<span class="checkmark"></span>
+							</label>
+  	  						<label class="radiocontainer">Male
+ 							<input type="radio" name="radio">
+  							<span class="checkmark"></span>
+							</label>
+							<br>
+      						<button type="submit">Sign up</button>
+      						</div>
+    				</div>
+
+    
+  		</form>
+		</div>
+<div>
 <script>
 var modal = document.getElementById('id01');
 window.onclick = function(event) {
