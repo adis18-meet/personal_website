@@ -4,14 +4,24 @@ app = Flask(__name__)
 from flask_sqlalchemy import SQLAlchemy
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
+from flask import request
 
-class potato(db.Model):
-	__tablename__ = "potato"
+class signup(db.Model):
+	__tablename__ = "signup"
 	id = db.Column(db.Integer,primary_key=True)
 	username = db.Column(db.String(25))
 	password = db.Column(db.String(20))
 db.create_all()
 
+@app.route('/submit_form', methods=['POST'])
+def submit_form():
+	username = request.form['uname']
+	password = request.form ['psw']
+	users = signup.query.all()
+	user = signup(username=username, password=password)
+	db.session.add(user)
+	db.session.commit()
+	return render_template("home.html", signuppopup = True, username1 = username)
 
 @app.route("/")
 @app.route("/home")
@@ -67,3 +77,5 @@ def fullbody():
 @app.route("/login")
 def login():
 	return render_template("home.html")
+
+
